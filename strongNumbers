@@ -1,0 +1,19 @@
+function strong(n) {
+let sum = 0;
+let strN = n.toString().split("");
+
+for (let i = 0; i < strN.length; i++){
+    let numb = parseInt(strN[i]);
+    let mult = 1;
+      for (let j = 1; j <= numb; j++){
+      mult *= j;
+     }
+    sum += mult;
+}
+
+if(sum === n){
+return "STRONG!!!!";
+}
+else{
+return "Not Strong !!" ;
+}
